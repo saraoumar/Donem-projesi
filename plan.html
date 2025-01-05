@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yolculuğunuzu Planlayın</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  
+  <section class="plan-section">
+    <div class="container">
+      <h2>Yolculuğunuzu Planlayın</h2>
+      <p>Seyahatinizi kişiselleştirmek için gerekli bilgileri girin. Size en uygun teklifi sunabilmemiz için aşağıdaki formu doldurun.</p>
+      <a href="index.html" class="button-1">Ana sayfaya dön</a>
+      <form action="#" method="post">
+        
+        <label for="destination">Destinasyon Seçin:</label>
+        <select id="destination" name="destination" required>
+          <option value="">Bir destinasyon seçin</option>
+          <option value="Istanbul">İstanbul</option>
+          <option value="Kapadokya">Kapadokya</option>
+          <option value="Antalya">Antalya</option>
+          <option value="Fethiye">Fethiye</option>
+        </select>
+
+        
+        <label for="num_people">Kişi Sayısı:</label>
+        <input type="number" id="num_people" name="num_people" min="1" max="10" required>
+
+
+        <label for="departure_date">Gidiş Tarihi:</label>
+        <input type="date" id="departure_date" name="departure_date" required>
+
+        
+        <label for="return_date">Dönüş Tarihi:</label>
+        <input type="date" id="return_date" name="return_date">
+
+        
+        <label for="special_requests">Özel İstekler veya Notlar:</label>
+        <textarea id="special_requests" name="special_requests" rows="4" placeholder="Ekstra talepleriniz, diyet, otel tercihleri vb."></textarea>
+
+        
+        <button type="submit">Seyahatinizi Planlayın</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
